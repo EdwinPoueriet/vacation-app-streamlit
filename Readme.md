@@ -77,8 +77,7 @@ This module was built as part of a technical assessment for an Automation Lead p
 
 ### **Dependencies**
 
-bash
-
+```
 streamlit>=1.28.0
 
 pandas>=2.0.0
@@ -88,6 +87,7 @@ plotly>=5.15.0
 numpy>=1.24.0
 
 openpyxl>=3.1.0
+```
 
 **🚀 Installation & Setup**
 ---------------------------
@@ -101,15 +101,25 @@ openpyxl>=3.1.0
 
 ### **Installation Steps**
 
-**Clone the repository** bashgit clone
-
+**Clone the repository** 
+```
+git clone
+```
 1.  cd vacation-visualization-module
     
-2.  **Install dependencies** bashpip install -r requirements.txt
+2.  **Create and activate virtual environment**
+    ``` 
+    python -m venv venv
+    venv\Scripts\activate
+    ```
+
+3.  **Install dependencies** 
+    ```pip install -r requirements.txt```
     
-3.  **Run the application** bashstreamlit run app.py
+4.  **Run the application** 
+    ```streamlit run app.py```
     
-4.  **Access the application**
+5.  **Access the application**
     
     *   Open your browser and navigate to http://localhost:8501
         
@@ -131,13 +141,6 @@ vacation-visualization-module/
 
 ├── README.md                      # Project documentation
 
-└── utils/                         # Utility functions (planned)
-
-    ├── data\_processing.py         # Data manipulation utilities
-
-    ├── conflict\_detection.py      # Conflict analysis logic
-
-    └── visualization\_helpers.py   # Chart generation utilities
 
 **📋 Data Format Requirements**
 -------------------------------
