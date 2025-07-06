@@ -98,6 +98,13 @@ openpyxl>=3.1.0
     
 *   pip package manager
     
+### **Testing Prerequisites**
+
+*   pytest>=7.0.0
+    
+*   pytest-cov>=4.0.0 (for coverage reports)
+
+*   psutil>=5.9.0 (for performance testing)
 
 ### **Installation Steps**
 
@@ -125,6 +132,18 @@ git clone
         
     *   Upload your Excel file or use the provided mock data
         
+**🧪 Running Tests**
+
+### **Test Prerequisites**
+
+Ensure testing dependencies are installed:
+``` pip install pytest pytest-cov psutil ```
+
+### **Test Execution Options**
+
+Run All Tests
+```python tests/run_tests.py```
+
 
 **📁 Project Structure**
 ------------------------
@@ -160,6 +179,8 @@ The module expects Excel files with the following columns:
 *   Días: Number of vacation days
     
 *   Aprobado: Approval status (Sí/No)
+
+*(this data structures could change to support historical records and more)*
     
 
 **🤖 AI-Assisted Development Process**
@@ -168,6 +189,8 @@ The module expects Excel files with the following columns:
 This project demonstrates strategic use of AI tools throughout the development lifecycle. Below are the prompts used:
 
 ### **Code Architecture & Design**
+
+* _"As a senior QA engineer and test automation specialist, create a comprehensive test suite for a vacation visualization module based on the following technical requirements document. The module is built with Python, Streamlit, Pandas, and Plotly."_
 
 *   _"As a senior software architect, analyze this vacation management system structure and recommend optimal separation of concerns, following SOLID principles and scalable design patterns for a Streamlit application."_
     
@@ -222,7 +245,6 @@ This project demonstrates strategic use of AI tools throughout the development l
 ### **Operational Efficiency**
 
 *   Reduced manual vacation tracking by 85%
-    
 *   Automated conflict detection prevents scheduling issues
     
 *   Real-time dashboard eliminates report generation delays
@@ -231,9 +253,7 @@ This project demonstrates strategic use of AI tools throughout the development l
 ### **Strategic Insights**
 
 *   Department-wise vacation pattern analysis
-    
-*   Predictive staffing requirement planning
-    
+        
 *   Resource allocation optimization
     
 
@@ -241,23 +261,19 @@ This project demonstrates strategic use of AI tools throughout the development l
 
 *   Intuitive interface requiring minimal training
     
-*   Mobile-responsive design for on-the-go access
-    
 *   Customizable filtering for different user roles
     
 
 **🔮 Future Enhancements**
 --------------------------
 
-### **Planned Features**
+### **Suggested Features**
 
 *   **Advanced Analytics**: Predictive modeling for vacation trends
     
 *   **Integration Capabilities**: API endpoints for HR system integration
     
 *   **Notification System**: Automated alerts for conflicts and approvals
-    
-*   **Mobile App**: Native mobile application for managers
     
 *   **AI Recommendations**: Smart vacation scheduling suggestions
     
