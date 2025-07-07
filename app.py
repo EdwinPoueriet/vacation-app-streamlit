@@ -316,7 +316,7 @@ def render_weekly_stats(filtered_data):
         x='week_start', 
         y='empleados_vacaciones',
         title='Número de Empleados en Vacaciones por Semana',
-        labels={'empleados_vacaciones': 'Empleados en Vacaciones', 'week_start': 'week_label'}
+        labels={'empleados_vacaciones': 'Empleados en Vacaciones', 'week_start': 'Semana'}
     )
     fig_weekly.update_traces(mode='lines+markers')
     st.plotly_chart(fig_weekly, use_container_width=True)
@@ -462,11 +462,12 @@ def render_current_vacations_tab(filtered_data, current_vacations):
 def main():
     
     # Sidebar filters
-    st.sidebar.header("Filtros")
+    
     
     uploaded_file = st.sidebar.file_uploader("Subir archivo Excel", type=["xlsx"])
     data = data_loader(uploaded_file)
     
+    st.sidebar.header("Filtros")
     # Optimize filter widgets
     selected_departments = st.sidebar.multiselect(
         "Departamento",
